@@ -1,4 +1,4 @@
-package org.xhy.interfaces.api.base;
+package org.czq.interfaces.api.base;
 
 import java.util.HashMap;
 import java.util.Map;

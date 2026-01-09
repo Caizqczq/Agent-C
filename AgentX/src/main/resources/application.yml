@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: agent-x
+    name: agent-c
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/agentx
