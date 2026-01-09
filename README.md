@@ -1,6 +1,6 @@
-# AgentX - 智能对话系统平台
+# AgentC - 智能对话系统平台
 
-AgentX是一个基于大型语言模型的智能对话系统平台，旨在提供强大、灵活且可扩展的对话能力和工具调用能力。用户可以通过该平台与多种大语言模型进行对话，接入自定义知识库，调用各种工具，并构建个性化的Agent服务。
+AgentC是一个基于大型语言模型的智能对话系统平台，旨在提供强大、灵活且可扩展的对话能力和工具调用能力。用户可以通过该平台与多种大语言模型进行对话，接入自定义知识库，调用各种工具，并构建个性化的Agent服务。
 
 ## 项目结构
 
@@ -32,8 +32,8 @@ AgentX是一个基于大型语言模型的智能对话系统平台，旨在提�
 1. 克隆项目
 
 ```bash
-git clone https://github.com/yourusername/AgentX.git
-cd AgentX
+git clone https://github.com/yourusername/AgentC.git
+cd AgentC
 ```
 
 2. 使用Maven构建项目
