@@ -5,12 +5,12 @@ server:
 
 spring:
   application:
-    name: agent-c
+    name: AgentC
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/agentc
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:agentc}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
@@ -34,3 +34,14 @@ logging:
     org.xhy: debug
   file:
     name: logs/agent-c.log
+    
+llm:
+  provider:
+    default: ${LLM_DEFAULT_PROVIDER:siliconflow}
+    providers:
+      siliconflow:
+        name: SiliconFlow
+        api-url: ${SILICONFLOW_API_URL:https://api.siliconflow.cn/v1/chat/completions}
+        api-key: ${SILICONFLOW_API_KEY:}
+        model: ${SILICONFLOW_MODEL:Qwen/Qwen3-32B}
+        timeout: ${SILICONFLOW_TIMEOUT:30000}
